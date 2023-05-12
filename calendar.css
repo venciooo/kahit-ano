@@ -1,14 +1,14 @@
 :root {
-  --primary-clr: #3C91E6;
+  --primary-clr: #3c91e6;
 }
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}
+} */
 /* nice scroll bar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 5px;
 }
 ::-webkit-scrollbar-track {
@@ -18,9 +18,9 @@
 ::-webkit-scrollbar-thumb {
   background: var(--primary-clr);
   border-radius: 50px;
-}
+} */
 
-body {
+/* body {
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -28,7 +28,7 @@ body {
   justify-content: center;
   padding-bottom: 30px;
   background-color: #e2e1dc;
-}
+} */
 .container {
   position: relative;
   width: 1200px;
@@ -39,7 +39,7 @@ body {
   display: flex;
 
   border-radius: 10px;
-  background-color: #0C0C1E;
+  /* background-color: #0c0c1e; */
 }
 .left {
   width: 60%;
@@ -58,7 +58,7 @@ body {
   background-color: #fff;
 }
 /* set after behind the main element */
-.calendar::before,
+/* .calendar::before,
 .calendar::after {
   content: "";
   position: absolute;
@@ -69,12 +69,12 @@ body {
   border-radius: 0 5px 5px 0;
   background-color: #d3d4d6d7;
   transform: translateY(-50%);
-}
-.calendar::before {
+} */
+/* .calendar::before {
   height: 94%;
   left: calc(100% + 12px);
   background-color: rgb(153, 153, 153);
-}
+} */
 .calendar .month {
   width: 100%;
   height: 150px;
@@ -264,6 +264,7 @@ body {
 .right .today-date .event-day {
   font-size: 2rem;
   font-weight: 500;
+  color: #373c4f;
 }
 .right .today-date .event-date {
   font-size: 1rem;
@@ -291,7 +292,7 @@ body {
   padding: 0 20px;
   padding-left: 50px;
   color: #fff;
-  background: linear-gradient(90deg, #3f4458, transparent);
+  background: #373c4f;
   cursor: pointer;
 }
 /* even event */
@@ -425,8 +426,7 @@ body {
 }
 .add-event-body .add-event-input {
   width: 100%;
-  height: 25views.py
-urls.pypx;
+  height: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;

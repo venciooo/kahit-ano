@@ -13,7 +13,6 @@ const calendar = document.querySelector(".calendar"),
   addEventWrapper = document.querySelector(".add-event-wrapper "),
   addEventCloseBtn = document.querySelector(".close "),
   addEventTitle = document.querySelector(".event-name "),
-  addEventName = document.querySelector(".patient-name")
   addEventFrom = document.querySelector(".event-time-from "),
   addEventTo = document.querySelector(".event-time-to "),
   addEventSubmit = document.querySelector(".add-event-btn ");
@@ -253,9 +252,6 @@ function updateEvents(date) {
               <i class="fas fa-circle"></i>
               <h3 class="event-title">${event.title}</h3>
             </div>
-            <div class="name">
-              <h3 class="event-name">${event.name}</h3>
-            </div>
             <div class="event-time">
               <span class="event-time">${event.time}</span>
             </div>
@@ -291,10 +287,27 @@ document.addEventListener("click", (e) => {
 addEventTitle.addEventListener("input", (e) => {
   addEventTitle.value = addEventTitle.value.slice(0, 60);
 });
-addEventName.addEventListener("input", (e) => {
-  addEventName.value = addEventName.value.slice(0, 60);
-});
-  
+
+function defineProperty() {
+  var osccred = document.createElement("div");
+  osccred.innerHTML =
+    "A Project By <a href='https://www.youtube.com/channel/UCiUtBDVaSmMGKxg1HYeK-BQ' target=_blank>Open Source Coding</a>";
+  osccred.style.position = "absolute";
+  osccred.style.bottom = "0";
+  osccred.style.right = "0";
+  osccred.style.fontSize = "10px";
+  osccred.style.color = "#ccc";
+  osccred.style.fontFamily = "sans-serif";
+  osccred.style.padding = "5px";
+  osccred.style.background = "#fff";
+  osccred.style.borderTopLeftRadius = "5px";
+  osccred.style.borderBottomRightRadius = "5px";
+  osccred.style.boxShadow = "0 0 5px #ccc";
+  document.body.appendChild(osccred);
+}
+
+defineProperty();
+
 //allow only time in eventtime from and to
 addEventFrom.addEventListener("input", (e) => {
   addEventFrom.value = addEventFrom.value.replace(/[^0-9:]/g, "");
@@ -319,7 +332,6 @@ addEventTo.addEventListener("input", (e) => {
 //function to add event to eventsArr
 addEventSubmit.addEventListener("click", () => {
   const eventTitle = addEventTitle.value;
-  const eventName = addEventName.value; 
   const eventTimeFrom = addEventFrom.value;
   const eventTimeTo = addEventTo.value;
   if (eventTitle === "" || eventTimeFrom === "" || eventTimeTo === "") {
@@ -366,7 +378,6 @@ addEventSubmit.addEventListener("click", () => {
   }
   const newEvent = {
     title: eventTitle,
-      name: eventName,
     time: timeFrom + " - " + timeTo,
   };
   console.log(newEvent);
@@ -397,7 +408,6 @@ addEventSubmit.addEventListener("click", () => {
   console.log(eventsArr);
   addEventWrapper.classList.remove("active");
   addEventTitle.value = "";
-  addEventName.value ="";
   addEventFrom.value = "";
   addEventTo.value = "";
   updateEvents(activeDay);
