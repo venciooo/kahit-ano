@@ -1,287 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recommendation Form</title>
-    <link rel="stylesheet" href="recommendationForm.css" />
 
-    <!-- Boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recommendation Form</title>
+  <link rel="stylesheet" href="recommendationForm.css" />
 
-    <!-- Import Poppins Font Preconnected from Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css" />
 
-  <body>
-    <!-- SIDEBAR -->
-    <section id="sidebar">
-      <a href="#" class="brand">
-        <i class="bx bxs-smile"></i>
-        <span class="text">Perfect Posture</span>
-      </a>
-      <ul class="side-menu top">
-        <li class="active">
-          <a href="#">
-            <i class="bx bxs-dashboard"></i>
-            <span class="text">Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bxs-shopping-bag-alt"></i>
-            <span class="text">Appointments</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bxs-doughnut-chart"></i>
-            <span class="text">Recommendations</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bxs-message-dots"></i>
-            <span class="text">Home Instructions</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bxs-group"></i>
-            <span class="text">Progress Tracker</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="side-menu">
-        <li>
-          <a href="#">
-            <i class="bx bxs-cog"></i>
-            <span class="text">Settings</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="logout">
-            <i class="bx bxs-log-out-circle"></i>
-            <span class="text">Logout</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <!-- SIDEBAR -->
+  <!-- Import Poppins Font Preconnected from Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <!-- CONTENT -->
-	<section id="content">
-		<!-- NAVBAR -->
-		<nav>
-			<i class='bx bx-menu' ></i>
-			<a href="#" class="nav-link">Categories</a>
-			<form action="#">
-				<div class="form-input">
-					<input type="search" placeholder="Search...">
-					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
-				</div>
-			</form>
-			<input type="checkbox" id="switch-mode" hidden>
-			<label for="switch-mode" class="switch-mode"></label>
-			<a href="#" class="notification">
-				<i class='bx bxs-bell' ></i>
-				<span class="num">8</span>
-			</a>
-			
-			<span class="divider"></span>
-			<div class="profile">
-				<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-				<ul class="profile-link">
-					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
-					<li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
-					<li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
-				</ul>
-			</div>
-	
-		</nav>
-		<!-- NAVBAR -->
+<body>
+  <!-- SIDEBAR -->
+  <section id="sidebar">
+    <a href="#" class="brand">
+      <i class="bx bxs-smile"></i>
+      <span class="text">Perfect Posture</span>
+    </a>
+    <ul class="side-menu top">
+      <li>
+        <a href="#">
+          <i class="bx bxs-dashboard"></i>
+          <span class="text">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-shopping-bag-alt"></i>
+          <span class="text">Appointments</span>
+        </a>
+      </li>
+      <li class="active">
+        <a href="#">
+          <i class="bx bxs-doughnut-chart"></i>
+          <span class="text">Recommendations</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-message-dots"></i>
+          <span class="text">Home Instructions</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-group"></i>
+          <span class="text">Progress Tracker</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="side-menu">
+      <li>
+        <a href="#">
+          <i class="bx bxs-cog"></i>
+          <span class="text">Settings</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="logout">
+          <i class="bx bxs-log-out-circle"></i>
+          <span class="text">Logout</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!-- SIDEBAR -->
 
-
-    <div class="container">
-      <h1>Recommendation Form</h1>
-      <form method="POST" action="{% url 'recommendationResult' %}">
-        <div class="form-group">
-          <label for="patient-name">Patient Name:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="patient-name"
-            name="patient_name"
-            required
-          />
+  <!-- CONTENT -->
+  <section id="content">
+    <!-- NAVBAR -->
+    <nav>
+      <i class='bx bx-menu'></i>
+      <a href="#" class="nav-link">Categories</a>
+      <form action="#">
+        <div class="form-input">
+          <input type="search" placeholder="Search...">
+          <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
         </div>
-        <div class="form-group">
-          <label for="patient-age">Age:</label>
-          <input
-            type="number"
-            class="form-control"
-            id="patient-age"
-            name="patient_age"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="patient-height">Height:</label>
-          <input
-            type="number"
-            class="form-control"
-            id="patient-height"
-            name="patient_height"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="patient-weight">Weight:</label>
-          <input
-            type="number"
-            class="form-control"
-            id="patient-weight"
-            name="patient_weight"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="patient-diagnosis">Diagnosis:</label>
-          <select
-            class="form-control"
-            id="patient-diagnosis"
-            name="patient_diagnosis"
-            required
-          >
-            <option value="stroke">Stroke</option>
-            <option value="spinal-cord-injury">Spinal Cord Injury</option>
-            <option value="cerebral-palsy">Cerebral Palsy</option>
-            <option value="carpal-tunnel-syndrome">
-              Carpal Tunnel Syndrome
-            </option>
-            <option value="epilepsy">Epilepsy</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="patient-pain">Are you experiencing pain?</label>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="patient_pain"
-              id="patient-pain-yes"
-              value="yes"
-            />
-            <label class="form-check-label" for="patient-pain-yes"> Yes </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="patient_pain"
-              id="patient-pain-no"
-              value="no"
-              checked
-            />
-            <label class="form-check-label" for="patient-pain-no"> No </label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="patient-pain-location">If yes, where?</label>
-          <select
-            class="form-control"
-            id="patient-pain-location"
-            name="patient_pain_location"
-            multiple
-          >
-            <option value="head">Head</option>
-            <option value="neck">Neck</option>
-            <option value="shoulders">Shoulders</option>
-            <option value="arms">Arms</option>
-            <option value="hands">Hands</option>
-            <option value="back">Back</option>
-            <option value="hips">Hips</option>
-            <option value="legs">Legs</option>
-            <option value="feet">Feet</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="patient-disability"
-            >Are you experiencing disability?</label
-          >
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="patient_disability"
-              id="patient-disability-yes"
-              value="yes"
-            />
-            <label class="form-check-label" for="patient-disability-yes">
-              Yes
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="patient_disability"
-              id="patient-disability-no"
-              value="no"
-              checked
-            />
-            <label class="form-check-label" for="patient-disability-no">
-              No
-            </label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="device-type">Type of Device:</label>
-          <select
-            class="form-control"
-            id="device-type"
-            name="device_type"
-            required
-          >
-            <option value="chair">Chair</option>
-            <option value="bed">Bed</option>
-            <option value="walker">Walker</option>
-            <option value="cane">Cane</option>
-            <option value="wheelchair">Wheelchair</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="device-features">Desired Features:</label>
-          <select
-            multiple
-            class="form-control"
-            id="device-features"
-            name="device_features"
-          >
-            <option value="adjustable-height">Adjustable Height</option>
-            <option value="reclining-backrest">Reclining Backrest</option>
-            <option value="footrest">Footrest</option>
-            <option value="armrest">Armrest</option>
-            <option value="wheels">Wheels</option>
-            <option value="folding">Folding</option>
-            <option value="lightweight">Lightweight</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-    </div>
-  </body>
+      <input type="checkbox" id="switch-mode" hidden>
+      <label for="switch-mode" class="switch-mode"></label>
+      <a href="#" class="notification">
+        <i class='bx bxs-bell'></i>
+        <span class="num">8</span>
+      </a>
 
-	<script src="script.js"></script>
+      <span class="divider"></span>
+      <div class="profile">
+        <img
+          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          alt="">
+        <ul class="profile-link">
+          <li><a href="#"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+          <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+          <li><a href="#"><i class='bx bxs-log-out-circle'></i> Logout</a></li>
+        </ul>
+      </div>
+
+    </nav>
+    <!-- NAVBAR -->
+
+    <main>
+      <div class="container">
+        <h1>Recommendation Form</h1>
+        <form method="POST" action="{% url 'recommendationResult' %}">
+          <div class="form-group">
+            <label for="patient-name">Patient Name:</label>
+            <input type="text" class="form-control" id="patient-name" name="patient_name" required />
+          </div>
+          <div class="form-group">
+            <label for="patient-age">Age:</label>
+            <input type="number" class="form-control" id="patient-age" name="patient_age" required />
+          </div>
+          <div class="form-group">
+            <label for="patient-height">Height:</label>
+            <input type="number" class="form-control" id="patient-height" name="patient_height" required />
+          </div>
+          <div class="form-group">
+            <label for="patient-weight">Weight:</label>
+            <input type="number" class="form-control" id="patient-weight" name="patient_weight" required />
+          </div>
+          <div class="form-group">
+            <label for="patient-diagnosis">Diagnosis:</label>
+            <select class="form-control" id="patient-diagnosis" name="patient_diagnosis" required>
+              <option value="stroke">Stroke</option>
+              <option value="spinal-cord-injury">Spinal Cord Injury</option>
+              <option value="cerebral-palsy">Cerebral Palsy</option>
+              <option value="carpal-tunnel-syndrome">
+                Carpal Tunnel Syndrome
+              </option>
+              <option value="epilepsy">Epilepsy</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="patient-pain">Are you experiencing pain?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="patient_pain" id="patient-pain-yes" value="yes" />
+              <label class="form-check-label" for="patient-pain-yes"> Yes </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="patient_pain" id="patient-pain-no" value="no"
+                checked />
+              <label class="form-check-label" for="patient-pain-no"> No </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="patient-pain-location">If yes, where?</label>
+            <select class="form-control" id="patient-pain-location" name="patient_pain_location" multiple>
+              <option value="head">Head</option>
+              <option value="neck">Neck</option>
+              <option value="shoulders">Shoulders</option>
+              <option value="arms">Arms</option>
+              <option value="hands">Hands</option>
+              <option value="back">Back</option>
+              <option value="hips">Hips</option>
+              <option value="legs">Legs</option>
+              <option value="feet">Feet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="patient-disability">Are you experiencing disability?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="patient_disability" id="patient-disability-yes"
+                value="yes" />
+              <label class="form-check-label" for="patient-disability-yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="patient_disability" id="patient-disability-no"
+                value="no" checked />
+              <label class="form-check-label" for="patient-disability-no">
+                No
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="device-type">Type of Device:</label>
+            <select class="form-control" id="device-type" name="device_type" required>
+              <option value="chair">Chair</option>
+              <option value="bed">Bed</option>
+              <option value="walker">Walker</option>
+              <option value="cane">Cane</option>
+              <option value="wheelchair">Wheelchair</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="device-features">Desired Features:</label>
+            <select multiple class="form-control" id="device-features" name="device_features">
+              <option value="adjustable-height">Adjustable Height</option>
+              <option value="reclining-backrest">Reclining Backrest</option>
+              <option value="footrest">Footrest</option>
+              <option value="armrest">Armrest</option>
+              <option value="wheels">Wheels</option>
+              <option value="folding">Folding</option>
+              <option value="lightweight">Lightweight</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </main>
+
+</body>
+
+<script src="script.js"></script>
+
 </html>
