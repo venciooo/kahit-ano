@@ -13,9 +13,11 @@ const calendar = document.querySelector(".calendar"),
   addEventWrapper = document.querySelector(".add-event-wrapper "),
   addEventCloseBtn = document.querySelector(".close "),
   addEventTitle = document.querySelector(".event-name "),
-  addEventFrom = document.querySelector(".event-time-from "),
-  addEventTo = document.querySelector(".event-time-to "),
-  addEventSubmit = document.querySelector(".add-event-btn ");
+  addPatientName = document.querySelector(".patient-name ");
+addPatientEmail = document.querySelector(".patient-email ");
+(addEventFrom = document.querySelector(".event-time-from ")),
+  (addEventTo = document.querySelector(".event-time-to ")),
+  (addEventSubmit = document.querySelector(".add-event-btn "));
 
 let today = new Date();
 let activeDay;
