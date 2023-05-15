@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* 
 body {
   font-family: "Poppins", sans-serif;
   max-width: 1200px;
@@ -12,13 +12,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
+} */
 
 h1 {
   text-align: center;
   color: #333333;
   font-weight: 600;
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
 }
 
 h2 {
